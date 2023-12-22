@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+#main {
+    border-top: .1px solid transparent;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+#hero {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.row {
+    font-size: 6vw;
+    color: white;
+    /* background-color: #fff; */
+
+
+    padding: 0 3vw;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.row:nth-child(1) {
+    margin-top: 3.7vw;
+}
+
+.row:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#line {
+    width: 60vw;
+    height: .03vw;
+    margin: 0 1vw;
+    margin-top: 1vw;
+    display: inline-block;
+
+    background: rgb(255, 255, 255);
+}
+
+.row:nth-child(3) {
+    display: flex;
+
+    align-items: flex-end;
+}
+
+.row:nth-child(4) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h3 {
+    font-size: .7vw;
+    padding: 4vw .4vw;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    word-spacing: 2px;
+    color: white;
+}
+
+#arrow {
+    font-size: 1vw;
+}
+
+#content {
+    position: relative;
+    margin-top: 64.92vh;
+    z-index: 9999;
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(0, 0, 0);
+}
+
+#video {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    /* background-color: rgb(107, 5, 5); */
+}
+
+#video>video {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#desc {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+#container h1 {
+    font-size: 2.5vw;
+    padding-top: .5vh;
+    font-weight: 300;
+}
+
+#desc2 {
+    background-color: black;
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#desc2>h1 {
+    font-size: 2.5vw;
+
+    /* padding-top: .5vh; */
+    font-weight: 300;
+}
+
+#line2 {
+    width: 86%;
+    background: white;
+    height: 1px;
+    display: inline-block;
+}
+
+#orbital {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    padding: 0 3vw;
+
+}
+
+#orbit>h1 {
+    font-size: 21.3vw;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+#design {
+    display: flex;
+    margin-top: -10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#design>h1 {
+    font-size: 21.3vw;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+}
+
+#get {
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#get>h4 {
+    font-size: 1.2vw;
+    word-spacing: 1px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#orbital_video{
+    width: 100%;
+    height: 100vh;
+    background-color: rebeccapurple;
+}

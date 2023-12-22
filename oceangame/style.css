@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#main{
+   background: url("ocean.jpg");
+   width: 100%;
+   height: 100vh;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+#dolphine img{
+    /* display: block; */
+    position: absolute;
+
+    bottom: 10%;
+    
+    height: 16vh; 
+    left: 50%;
+    size: 15rem;
+    
+    transform: translate(-90%, -50%);
+
+    
+}
+

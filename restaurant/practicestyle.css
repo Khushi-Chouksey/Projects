@@ -1,0 +1,294 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/* /utility class styling */
+.btn-primary{
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(6, 172, 150);
+    padding: 10px 12px;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    appearance: none;
+    /* border-style: ; */
+
+}
+.container{
+
+    max-width: 1600px;
+    margin: auto;
+    width: 90%;
+
+}
+.navbar-container{
+    display: flex;
+    background: rgb(158, 145, 145);
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    font-size: 500;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px black;
+    opacity: 0.5;
+    z-index: 1;
+
+
+}
+
+.nav ul{
+    display: flex;
+    margin-left: 50rem;
+    text-decoration: none;
+
+}
+.nav li{
+    list-style: none;
+    margin-left: 2rem;
+    margin-right: 0px;
+    font-size: 30px;
+    color: rgb(29, 27, 27);
+    text-decoration-line: none;
+    
+    
+}
+.nav a{
+    text-decoration: none;
+}
+.navbar-container .logo{
+    font-size: 20px;
+    margin-left: 2rem;
+    color: rgb(24, 21, 21);
+}
+.nav li:hover{
+    color: rgba(2, 114, 99, 0.986);
+}
+
+/* #######################showcase styling #################### */
+.showcase-container{
+    width:100%;
+    height: 50vh;
+   
+     background:linear-gradient(rgba(240,240,240,0.100),rgba(255,255,255,0.200)),url("header-image2.jpg"); 
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.6; 
+    
+
+}
+/* .showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6;
+} */
+.showcase-area .showcase-heading{
+ text-transform: uppercase;
+}
+.showcase-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.showcase-area p{
+    margin-top: 0.7rem;
+}
+.showcase-area button{
+    margin-top: 0.7rem;
+}
+/* /////about area styling  */
+
+.about-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+}
+.about-image{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+.about-image img{
+    height: 500px;
+    max-width: 100%;
+    display: block;
+    padding: 30px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0px 40px 0px 40px;
+
+    
+    
+}
+/* //////////////////////// */
+/* ######## about styling ####################*/
+#about{
+    padding: 50px 0px;
+    background: #f5f5f7;
+
+}
+
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#about h2{
+    font-size: 3.2rem;
+}
+#about p{
+    font-size: 1.6rem;
+    color: #555;
+}
+
+#about .small{
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 600;
+}
+.about-img{
+    flex: 1 1 400px; 
+
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+    
+}
+
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+
+    }
+}
+.about-txt{
+
+flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translateX(-150%);
+    animation: about-txt-animation 1s ease-in-out forwards;
+
+}
+@keyframes about-txt-animation{
+    100%{
+        transform: translate(0);
+    }
+
+}
+.about-img img{
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+/* ################### types of food styling###### */
+/* .food{
+    padding: 5rem 0 10rem 0;
+
+}
+
+#food h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+
+.food-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.food-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.img-container{
+    margin: 0.5rem 1rem;
+    position: relative;
+
+}
+
+.img-content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    opacity: 1;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+
+}
+
+.img-content h3{
+  color: #fff;
+  font-size: 3rem;
+
+}
+
+.img-content a{
+    font-size: 1.2rem;
+
+}
+
+.img-container::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.871);
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+
+}
+
+
+.img-container:hover .img-content{
+    opacity: 1;
+    top:40%;
+} */

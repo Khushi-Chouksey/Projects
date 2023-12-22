@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#upperdiv{
+    font-family: Aeonikpro, sans-serif;
+   
+    overflow: hidden;
+    padding:  6vw 3vw;
+    width: 100%;
+    min-height: 70vh;
+    background-color: black;
+    line-height: 6vh;
+}
+
+#upperdiv h1{
+    font-size: 6vw;
+    color: white;
+    font-weight: 300;
+   
+
+}
+#upperdiv #line{
+    width: 40vw;
+    margin-bottom: 1vw;
+    height: .1vh;
+    display: inline-block;
+    background-color: white;
+}
+#upperdiv h1:nth-child(4){
+    line-height: 18vh;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#sidetxt span{
+    font-size: 1vw;
+}
+
+#video{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+
